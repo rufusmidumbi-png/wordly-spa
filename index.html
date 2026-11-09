@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h1>Wordly</h1>
+    <p>Discover new words. Build your vocabulary.</p>
+</header>
+
+<main>
+    <section class="search-section">
+        <form id="search-form">
+            <label for="word-input">Search for a word</label>
+
+            <div class="search-box">
+                <input type="text" id="word-input" placeholder="Enter a word..." autocomplete="off" required>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <p id="message"></p>
+    </section>
+    <section id="result-section" class="result-section" hidden>
+    <div class="word-header">
+        <div>
+            <h2 id="word"></h2>
+            <p id="phonetic"></p>
+        </div>
+
+        <button id="audio-button" type="button" hidden>
+            Listen
+        </button>
+    </div>
+
+    <div id="meanings"></div>
+
+    <div id="synonyms-section">
+        <h3>Synonyms</h3>
+        <div id="synonyms"></div>
+    </div>
+
+    <button id="favorite-button" type="button">
+        Save Word
+    </button>
+</section>
+<section class="favorites-section">
+    <h2>Saved Words</h2>
+    <p>Words you save will appear here.</p>
+    <ul id="favorites-list"></ul>
+</section>
+</main> 
+<footer>
+    <p>Wordly Dictionary SPA</p>
+</footer>
+<script src="config.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
